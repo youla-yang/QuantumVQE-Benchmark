@@ -4,7 +4,7 @@ This dataset contains experimental logs of **Variational Quantum Eigensolver (VQ
 It provides structured SQLite databases for reproducible benchmarking of optimization strategies, ansatz choices, and molecular Hamiltonians.
 
 - Format: SQLite (`results.sqlite`, `runs.sqlite`)
-- Molecules: H₂, LiH, BeH₂, H₂O
+- Molecules: H₂, LiH, BeH₂
 - Basis sets: STO-3G, 6-31G
 - Circuit depths: 2–12
 - Optimizers: Adam, PPO, COBYLA, etc.
@@ -16,3 +16,11 @@ import sqlite3, pandas as pd
 conn = sqlite3.connect("results.sqlite")
 df = pd.read_sql("SELECT * FROM runs LIMIT 5;", conn)
 print(df.head())
+
+@dataset{yang2025vqebench,
+  author       = {Youla Yang},
+  title        = {Quantum VQE Benchmark Dataset},
+  year         = {2025},
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.xxxxxxx}
+}
