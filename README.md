@@ -7,8 +7,10 @@ It provides structured SQLite databases for reproducible benchmarking of optimiz
 - Molecules: H₂, LiH, BeH₂
 - Basis sets: STO-3G, 6-31G
 - Circuit depths: 2–12
-- Optimizers: Adam, PPO, COBYLA, etc.
+- Optimizers: COBYLA, etc.
 - Total runs: ~380 (v1.0.0)
+- parameters
+- energy
 
 ## Usage
 ```python
